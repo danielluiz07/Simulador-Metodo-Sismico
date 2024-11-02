@@ -33,7 +33,6 @@ void loop() {
   cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
    // INCLUSAO PARA APRESENTAR VALOR SEM CASAS DECIMAS EM CENTIMETROS e METROS
   //-------------------------------------------------------------------------
-  // (CÓDIGO ORIGINAL CRIADO POR RODRIGO COSTA em 01/04/17).
   //------------------------------------------------------------------------- 
     String cmMsecToMetersFinal = String(cmMsec *10); //transformamos nossa variavel "cmMsec" que está até aqui em "cm" para "metros"
   String cmMsecString = String(cmMsec, 0); //aqui pego a variavel que armazena os valores em centimetros e no segundo argumento ("0") serve para dizer que nao quero nenhuma casa decimal (ou seja, numero intero apenas). RCosta.
@@ -63,6 +62,5 @@ void loop() {
   
  
   delay(1000);
-  
  
 }
